@@ -597,10 +597,9 @@ body {
     
     #centeringDivIndex {
         width: 24%;
-        top: 50%;
-        bottom: 50%;
+        top: 30%;
+        bottom: 70%;
         left: 36%;
-        background-color: gray;
         text-align: center;
     }
     
