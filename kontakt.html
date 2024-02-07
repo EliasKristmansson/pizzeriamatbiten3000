@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="sv">
+	<head>
+        <title>Om Oss</title>
+        <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8">
+        <meta name="description" content="Omoss">
+        <meta name="author" content="Elias Kristmansson">
+    </head>
+    <body>
+	<header>
+		<div id="headerDiv1">
+		    <a href="index.html"><img id="logo" style="height:70px" alt="Logga för hemsidan" src="img/logo.png"></a>
+		    <h1 id="omossID">KONTAKT</h1>
+		    <div id="hamburgerMenu">
+			<img style="height: 40px;" alt="Hamburgermeny" src="img/Hamburger_icon.png">
+			<div class="dropdown-content">
+			    <div class="dropdownMenuDiv"><a href="menu.html">RESTAURANG</a></div>
+			    <div class="dropdownMenuDiv"><a href="butik.html">BUTIK</a></div>
+			    <div class="dropdownMenuDiv"><a href="omoss.html">OM OSS</a></div>
+			    <div class="dropdownMenuDiv"><a href="kontakt.html">KONTAKT</a></div>
+			    <div class="dropdownMenuDiv"><a href="underconstruction.html">ANNAT</a></div>
+			</div>
+		    </div>
+		</div>
+	    </header>
+        <div id="container5" style="overflow: hidden;">
+            <img id="backgroundImage" alt="Bakgrund för hemsidan" src="img/background.jpg">
+	        <div id="kontaktInner">
+                <form id="form">
+                    <div>
+                        <label for="fnameInput" id="fnameLabel">Förnamn:</label><br>
+                        <input type="text"  name="fname" id="fnameInput" placeholder="Förnamn">
+                    </div>
+                    <div>
+                        <label for="lnameInput" id="lnameLabel">Efternamn:</label><br>
+                        <input type="text" name="lname" id="lnameInput" placeholder="Efternamn">
+                    </div>
+                    <div>
+                        <label for="emailInput" id="emailLabel">Email:</label><br>
+                        <input type="email" name="email" id="emailInput" placeholder="Email">
+                    </div>
+                    <div>
+                        <label for="messageInput" id="messageLabel">Meddelande:</label><br>
+                        <textarea name="message" form="form" id="messageInput" placeholder="Meddelande"></textarea>
+                    </div>
+                    <button type="submit" id="formButton">
+                        Skicka
+                    </button>
+                </form>
+            </div>
+            <p id="kontaktInfoText">
+                Pizzeria Matbiten - Umedalsallén 25 Umeå <br>Telefon - 090-316 00<br>
+                <!-- De har inga sociala medier så länkarna
+                     går till startsidan på respektive plattform-->
+                <a href="https://www.facebook.com/?locale=sv_SE" target="_blank"><img class="socialMedia" alt="Facebook" src="img/facebook.png"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img class="socialMedia" alt="Instagram" src="img/instagram.png"></a>
+                <a href="https://twitter.com/?lang=sv" target="_blank"><img class="socialMedia" alt="Facebook" src="img/twitter.png"></a>
+            </p>
+	    </div>
+    </body>
+</html>
