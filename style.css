@@ -242,6 +242,11 @@ body {
     width:10%;
 }
 
+.menyRatt:hover {
+	color: rgb(172, 172, 172);
+    cursor: pointer;
+}
+
 /* --------------- Delivery ---------------- */
 
 #vanligMenyDelivery {
@@ -284,6 +289,7 @@ body {
     width: 1.2vw;
     height: 1.2vw;
     filter: invert(1);
+    cursor: pointer;
 }
 
 .ratt {

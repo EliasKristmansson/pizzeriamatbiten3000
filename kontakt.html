@@ -6,6 +6,7 @@
         <meta charset="UTF-8">
         <meta name="description" content="Omoss">
         <meta name="author" content="Elias Kristmansson">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.7.1.js"></script>
     </head>
     <body>
 	<header>
@@ -30,19 +31,19 @@
                 <form id="form">
                     <div>
                         <label for="fnameInput" id="fnameLabel">Förnamn:</label><br>
-                        <input type="text"  name="fname" id="fnameInput" placeholder="Förnamn">
+                        <input type="text" onfocus="inputFocus(this)" onblur="inputBlur(this)" name="fname" id="fnameInput" placeholder="Förnamn">
                     </div>
                     <div>
                         <label for="lnameInput" id="lnameLabel">Efternamn:</label><br>
-                        <input type="text" name="lname" id="lnameInput" placeholder="Efternamn">
+                        <input type="text" onfocus="inputFocus(this)" onblur="inputBlur(this)" name="lname" id="lnameInput" placeholder="Efternamn">
                     </div>
                     <div>
                         <label for="emailInput" id="emailLabel">Email:</label><br>
-                        <input type="email" name="email" id="emailInput" placeholder="Email">
+                        <input type="email" onfocus="inputFocus(this)" onblur="inputBlur(this)" name="email" id="emailInput" placeholder="Email">
                     </div>
                     <div>
                         <label for="messageInput" id="messageLabel">Meddelande:</label><br>
-                        <textarea name="message" form="form" id="messageInput" placeholder="Meddelande"></textarea>
+                        <textarea name="message" onfocus="inputFocus(this)" onblur="inputBlur(this)" form="form" id="messageInput" placeholder="Meddelande"></textarea>
                     </div>
                     <button type="submit" id="formButton">
                         Skicka
@@ -58,5 +59,6 @@
                 <a href="https://twitter.com/?lang=sv" target="_blank"><img class="socialMedia" alt="Facebook" src="img/twitter.png"></a>
             </p>
 	    </div>
+	    <script src="script.js"></script>
     </body>
 </html>

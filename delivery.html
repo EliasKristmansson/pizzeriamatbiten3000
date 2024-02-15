@@ -6,6 +6,7 @@
         <meta charset="UTF-8">
         <meta name="description" content="Delivery">
         <meta name="author" content="Elias Kristmansson">
+	    <script type="text/javascript" src="https://code.jquery.com/jquery-3.7.1.js"></script>
     </head>
     <body>
         <header>
@@ -33,19 +34,6 @@
 
                     <div class="checkoutInner">
                         
-                        <!--Placeholder för JavaScript i framtiden, 
-                        kund ska kunna lägga till och ta bort rätter till 
-			            checkout-listan och klicka beställ för att rensa listan -->
-
-                        <div class="ratt">
-                            <p class="rattText">1x Placeholder</p>
-                            <a href=""><img class="remove" alt="Soptunna för att indikera ta bort" src="img/trash.png"></a><br>
-                        </div>
-                        <div class="ratt">
-                            <p class="rattText">2x Placeholder</p>
-                            <a href=""><img class="remove" alt="Soptunna för att indikera ta bort" src="img/trash.png"></a><br>
-                        </div>
-
                     </div>
 
                     <p id="total">Total: x kr</p>
@@ -60,10 +48,10 @@
                         <p class="pizza">Rekommenderas</p>
                         <div class="vanligMenyText">
                             <ol start="24">
-                                <li>Napoli</li>
-                                <li>Pirlo</li>
-                                <li>Hot Pepper</li>
-                                <li>Azteka</li>
+                                <li class="menyRatt">Napoli</li>
+                                <li class="menyRatt">Pirlo</li>
+                                <li class="menyRatt">Hot Pepper</li>
+                                <li class="menyRatt">Azteka</li>
                             </ol>
                         </div>
                         <div class="vanligMenyPris">
@@ -75,10 +63,10 @@
                         </div>
                         <div class="vanligMenyText">
                             <ol start="28">
-                                <li>Texas</li>
-                                <li>Renen</li>
-                                <li>Björklöven</li>
-                                <li>Acapulco</li>
+                                <li class="menyRatt">Texas</li>
+                                <li class="menyRatt">Renen</li>
+                                <li class="menyRatt">Björklöven</li>
+                                <li class="menyRatt">Acapulco</li>
                             </ol>
                         </div>
                         <div class="vanligMenyPris">
@@ -89,10 +77,10 @@
                         </div>
                         <div class="vanligMenyText">
                             <ol start="32">
-                                <li>Teaterallén</li>
-                                <li>Västerbottens tacopizza</li>
-                                <li>Kebabpizza</li>
-                                <li>Umedalens kebabpizza</li>
+                                <li class="menyRatt">Teaterallén</li>
+                                <li class="menyRatt">Västerbottens tacopizza</li>
+                                <li class="menyRatt">Kebabpizza</li>
+                                <li class="menyRatt">Umedalens kebabpizza</li>
                             </ol>
                         </div>
                         <div class="vanligMenyPris">
@@ -107,14 +95,14 @@
                         <p class="pizza">Klassisk Pizza</p>
                         <div class="vanligMenyText">
                             <ol>
-                                <li>Margarita</li>
-                                <li>Vesuvio</li>
-                                <li>Hawaii</li>
-                                <li>Capricciosa</li>
-                                <li>Bussola</li>
-                                <li>Amerikansk pepperoni</li>
-                                <li>Al Tonno</li>
-                                <li>Disco</li>
+                                <li class="menyRatt">Margarita</li>
+                                <li class="menyRatt">Vesuvio</li>
+                                <li class="menyRatt">Hawaii</li>
+                                <li class="menyRatt">Capricciosa</li>
+                                <li class="menyRatt">Bussola</li>
+                                <li class="menyRatt">Amerikansk pepperoni</li>
+                                <li class="menyRatt">Al Tonno</li>
+                                <li class="menyRatt">Disco</li>
                             </ol>
                         </div>
                         <div class="vanligMenyPris">95<br>
@@ -128,14 +116,14 @@
                         </div>
                         <div class="vanligMenyText">
                             <ol start="9">
-                                <li>Salami</li>
-                                <li>Cecilia</li>
-                                <li>Mexicana</li>
-                                <li>Havets läckerheter</li>
-                                <li>Sofia</li>
-                                <li>Maria</li>
-                                <li>Kentucky</li>
-                                <li>Grekisk pizza</li>
+                                <li class="menyRatt">Salami</li>
+                                <li class="menyRatt">Cecilia</li>
+                                <li class="menyRatt">Mexicana</li>
+                                <li class="menyRatt">Havets läckerheter</li>
+                                <li class="menyRatt">Sofia</li>
+                                <li class="menyRatt">Maria</li>
+                                <li class="menyRatt">Kentucky</li>
+                                <li class="menyRatt">Grekisk pizza</li>
                             </ol>
                         </div>
                         <div class="vanligMenyPris">99<br>
@@ -149,13 +137,13 @@
                         </div>
                         <div class="vanligMenyText">
                             <ol start="17">
-                                <li>Falafelpizza</li>
-                                <li>Hawaii Special</li>
-                                <li>Quattro Formaggi</li>
-                                <li>Quattro Stagioni</li>
-                                <li>Vegetariana</li>
-                                <li>Mamma Mia</li>
-                                <li>Baggböle Special</li>
+                                <li class="menyRatt">Falafelpizza</li>
+                                <li class="menyRatt">Hawaii Special</li>
+                                <li class="menyRatt">Quattro Formaggi</li>
+                                <li class="menyRatt">Quattro Stagioni</li>
+                                <li class="menyRatt">Vegetariana</li>
+                                <li class="menyRatt">Mamma Mia</li>
+                                <li class="menyRatt">Baggböle Special</li>
                             </ol>
                         </div>
                         <div class="vanligMenyPris">
@@ -174,10 +162,10 @@
                         <p class="pizza">Rullpizza</p>
                         <div class="vanligMenyText">
                             <ol start="36">
-                                <li>Margaritarulle</li>
-                                <li>Vesuviorulle</li>
-                                <li>Hawaiirulle</li>
-                                <li>Capricciosarulle</li>
+                                <li class="menyRatt">Margaritarulle</li>
+                                <li class="menyRatt">Vesuviorulle</li>
+                                <li class="menyRatt">Hawaiirulle</li>
+                                <li class="menyRatt">Capricciosarulle</li>
                             </ol>
                         </div>
                         <div class="vanligMenyPris">
@@ -188,10 +176,10 @@
                         </div>
                         <div class="vanligMenyText">
                             <ol start="40">
-                                <li>Räkrulle</li>
-                                <li>Vegetarisk rulle</li>
-                                <li>Salamirulle</li>
-                                <li>Kycklingrulle</li>
+                                <li class="menyRatt">Räkrulle</li>
+                                <li class="menyRatt">Vegetarisk rulle</li>
+                                <li class="menyRatt">Salamirulle</li>
+                                <li class="menyRatt">Kycklingrulle</li>
                             </ol>
                         </div>
                         <div class="vanligMenyPris">
@@ -202,9 +190,9 @@
                         </div>
                         <div class="vanligMenyText">
                             <ol start="44">
-                                <li>Falafelrulle</li>
-                                <li>Kebabrulle</li>
-                                <li>Kebabrulle Super</li>
+                                <li class="menyRatt">Falafelrulle</li>
+                                <li class="menyRatt">Kebabrulle</li>
+                                <li class="menyRatt">Kebabrulle Super</li>
                             </ol>
                             <br>
                         </div>
@@ -220,10 +208,10 @@
                         <p class="pizza">Inbakat</p>
                         <div class="vanligMenyText">
                             <ol start="47">
-                                <li>Calzone</li>
-                                <li>Inbakad Hawaii</li>
-                                <li>Calzoncino</li>
-                                <li>Calzone Special</li>
+                                <li class="menyRatt">Calzone</li>
+                                <li class="menyRatt">Inbakad Hawaii</li>
+                                <li class="menyRatt">Calzoncino</li>
+                                <li class="menyRatt">Calzone Special</li>
                             </ol>
                         </div>
                         <div class="vanligMenyPris">
@@ -234,10 +222,10 @@
                         </div>
                         <div class="vanligMenyText">
                             <ol start="51">
-                                <li>Calzone Magnum</li>
-                                <li>Jättecalzone</li>
-                                <li>Kebabubåt</li>
-                                <li>Kycklingubåt</li>
+                                <li class="menyRatt">Calzone Magnum</li>
+                                <li class="menyRatt">Jättecalzone</li>
+                                <li class="menyRatt">Kebabubåt</li>
+                                <li class="menyRatt">Kycklingubåt</li>
                             </ol>
                         </div>
                         <div class="vanligMenyPris">
@@ -248,8 +236,8 @@
                         </div>
                         <div class="vanligMenyText">
                             <ol start="55">
-                                <li>Ubåt</li>
-                                <li>Uikbåt</li>
+                                <li class="menyRatt">Ubåt</li>
+                                <li class="menyRatt">Uikbåt</li>
                             </ol><br><br>
                         </div>
                         <div class="vanligMenyPris">
@@ -262,10 +250,10 @@
                         <p class="pizza">Grillrätter</p>
                         <div class="vanligMenyText">
                             <ol start="57">
-                                <li>Kebab med bröd</li>
-                                <li>Falafel med bröd</li>
-                                <li>Kebabtallrik</li>
-                                <li>Kycklingtallrik</li>
+                                <li class="menyRatt">Kebab med bröd</li>
+                                <li class="menyRatt">Falafel med bröd</li>
+                                <li class="menyRatt">Kebabtallrik</li>
+                                <li class="menyRatt">Kycklingtallrik</li>
                             </ol>
                         </div>
                         <div class="vanligMenyPris">
@@ -276,10 +264,10 @@
                         </div>
                         <div class="vanligMenyText">
                             <ol start="61">
-                                <li>Falafeltallrik</li>
-                                <li>90g Hamburgare</li>
-                                <li>Skrovmål</li>
-                                <li>Superskrovmål</li>
+                                <li class="menyRatt">Falafeltallrik</li>
+                                <li class="menyRatt">90g Hamburgare</li>
+                                <li class="menyRatt">Skrovmål</li>
+                                <li class="menyRatt">Superskrovmål</li>
                             </ol>
                         </div>
                         <div class="vanligMenyPris">
@@ -290,10 +278,10 @@
                         </div>
                         <div class="vanligMenyText">
                             <ol start="65">
-                                <li>Veganburgare</li>
-                                <li>Lövbit</li>
-                                <li>Liten stripsmeny</li>
-                                <li>Stor stripsmeny</li>
+                                <li class="menyRatt">Veganburgare</li>
+                                <li class="menyRatt">Lövbit</li>
+                                <li class="menyRatt">Liten stripsmeny</li>
+                                <li class="menyRatt">Stor stripsmeny</li>
                             </ol>
                         </div>
                         <div class="vanligMenyPris">
@@ -308,11 +296,11 @@
                         <p class="pizza">Pasta</p>
                         <div class="vanligMenyText" style="width: 73%;">
                             <ol start="69">
-                                <li>Pasta Carbonara</li>
-                                <li>Pasta Bolognese</li>
-                                <li>Pasta Vegetarisk</li>
-                                <li>Pasta Kycklingcurry</li>
-                                <li>Pasta Oxfilé</li>
+                                <li class="menyRatt">Pasta Carbonara</li>
+                                <li class="menyRatt">Pasta Bolognese</li>
+                                <li class="menyRatt">Pasta Vegetarisk</li>
+                                <li class="menyRatt">Pasta Kycklingcurry</li>
+                                <li class="menyRatt">Pasta Oxfilé</li>
                             </ol><br><br>
                         </div>
                         <div class="vanligMenyPris" style="width: 5%;">
@@ -328,10 +316,10 @@
                         <p class="pizza">Sallad</p>
                         <div class="vanligMenyText" style="width: 73%;">
                             <ol start="74">
-                                <li>Falafelsallad</li>
-                                <li>Kebabsallad</li>
-                                <li>Caesarsallad</li>
-                                <li>Grekisk sallad</li>
+                                <li class="menyRatt">Falafelsallad</li>
+                                <li class="menyRatt">Kebabsallad</li>
+                                <li class="menyRatt">Caesarsallad</li>
+                                <li class="menyRatt">Grekisk sallad</li>
                             </ol>
                             <br><br><br>
                         </div>
@@ -348,13 +336,13 @@
                         <p class="pizza">Barn</p>
                         <div class="vanligMenyText" style="width: 73%;">
                             <ol start="78">
-                                <li>Barnmargarita</li>
-                                <li>Barnvesuvio</li>
-                                <li>Barnhawaii</li>
-                                <li>Barnkebabpizza</li>
-                                <li>Barnspaghetti</li>
-                                <li>Barnskrovmål</li>
-                                <li>Barnkebabtallrik</li>
+                                <li class="menyRatt">Barnmargarita</li>
+                                <li class="menyRatt">Barnvesuvio</li>
+                                <li class="menyRatt">Barnhawaii</li>
+                                <li class="menyRatt">Barnkebabpizza</li>
+                                <li class="menyRatt">Barnspaghetti</li>
+                                <li class="menyRatt">Barnskrovmål</li>
+                                <li class="menyRatt">Barnkebabtallrik</li>
                             </ol>
                         </div>
                         <div class="vanligMenyPris" style="width: 5%;">
@@ -370,5 +358,7 @@
                 </div>
             </div>
 	    </div>
+
+        <script src="script.js"></script>
     </body>
 </html>
