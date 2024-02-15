@@ -77,3 +77,42 @@ document.addEventListener("DOMContentLoaded", function() {
         currListItems = [];
     });
 });
+
+$(document).ready(function(){
+    $("#toggleVideo").click(function(){
+        $("#video").toggle();
+    });
+
+    $("#hamburgerMenu").click(function(){
+        $(".dropdown-content").slideToggle("fast");
+    });
+
+    $(".dropdownMenuDiv").each(function(){
+        $(this).data('originalFontSize', $(this).css('font-size'));
+    });
+
+    $("#restaurang, #butik, #omoss, #kontakt").each(function(){
+        $(this).data('originalBackgroundColor', $(this).css('background-color'));
+    });
+
+
+    $(".dropdownMenuDiv").hover(function(){
+        $(this).stop().animate({
+            fontSize: '20px'
+        });
+    }, function(){
+        $(this).stop().animate({
+            fontSize: $(this).data('originalFontSize')
+        });
+    });
+
+    $("#restaurang, #butik, #omoss, #kontakt").hover(function(){
+        $(this).stop().animate({
+            backgroundColor: '#4a0d00'
+        }, "fast");
+    }, function(){
+        $(this).stop().animate({
+            backgroundColor: $(this).data('originalBackgroundColor')
+        }, "fast");
+    });
+});
