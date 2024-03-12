@@ -502,6 +502,14 @@ body {
     background-color: #230c03;
 }
 
+#captchaButton {
+	text-align: center;
+	font-size: 1.5vw;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
 /* ---------------- Random ------------------ */
 
 #hamburgerMenu {
